@@ -1,0 +1,11 @@
+.navbar-vertical.navbar-expand-xs .navbar-collapse {
+    overflow: hidden;
+}
+
+.input-group{
+    margin-bottom: 0.25rem !important;
+}
+
+.table thead th {
+    padding: 0.5rem 0.5rem;
+}

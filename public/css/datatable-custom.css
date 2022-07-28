@@ -1,0 +1,308 @@
+@charset "UTF-8";
+
+.dataTables_wrapper .table {
+    margin: 40px 0 20px
+}
+
+.dataTables_wrapper .table>thead>tr>th {
+    cursor: pointer
+}
+
+.dataTables_wrapper .table>thead>tr>th:hover {
+    background-color: #fbfbfb
+}
+
+/*
+.dataTables_wrapper .table>thead>tr>th.sorting_asc,
+.dataTables_wrapper .table>thead>tr>th.sorting_desc {
+    position: relative
+}
+
+.dataTables_wrapper .table>thead>tr>th.sorting_asc:after,
+.dataTables_wrapper .table>thead>tr>th.sorting_desc:after {
+    font-family: Material-Design-Iconic-Font;
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    font-size: 1.4rem
+}
+
+.dataTables_wrapper .table>thead>tr>th.sorting_asc:after {
+    content: '\f1cd'
+}
+
+.dataTables_wrapper .table>thead>tr>th.sorting_desc:after {
+    content: '\f1ce'
+}
+*/
+
+div.dataTables_filter label,
+div.dataTables_length  label{
+    font-size: 0;
+}
+
+div.dataTables_filter,
+div.dataTables_length{
+    position: relative
+}
+
+.dataTables_filter:after,
+.dataTables_length:after {
+    font-family: Material-Design-Iconic-Font;
+    position: absolute;
+    left: 1px;
+    bottom: 5px;
+    font-size: 1.2rem;
+    color: #333
+}
+
+.dataTables_filter>label,
+.dataTables_length>label {
+    margin: 0;
+    width: 100%
+}
+
+.dataTables_filter>label input[type=search],
+.dataTables_filter>label select,
+.dataTables_length>label input[type=search],
+.dataTables_length>label select {
+    padding-left: 25px;
+    font-size: 1rem;
+    background: 0 0;
+    border: 0;
+    height: 35px;
+    border-radius: 0;
+    width: 100%;
+    border-bottom: 1px solid #eceff1
+}
+
+.dataTables_length {
+    float: right;
+    margin-left: 20px
+}
+
+.dataTables_length:before {
+    content: "";
+    position: absolute;
+    pointer-events: none;
+    z-index: 1;
+    right: 0;
+    bottom: 5px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 8px 8px;
+    border-color: transparent transparent #d1d1d1
+}
+
+@media (max-width:575.98px) {
+    .dataTables_length {
+        display: none
+    }
+}
+
+.dataTables_length:after {
+    font-family: "Material Icons Round";
+    content: 'view_headline'
+}
+
+.dataTables_length select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none
+}
+
+.dataTables_filter {
+    overflow: hidden
+}
+
+.dataTables_filter:after {
+    font-family: "Material Icons Round";
+    content: 'search';
+}
+
+.dataTables_filter>label:after,
+.dataTables_filter>label:before {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    transition: width .5s ease;
+    background-color: #2196F3
+}
+
+.dataTables_filter>label:before {
+    left: 50%
+}
+
+.dataTables_filter>label:after {
+    right: 50%
+}
+
+.dataTables_filter--toggled>label:after,
+.dataTables_filter--toggled>label:before {
+    width: 50%
+}
+
+.dataTables_paginate {
+    text-align: center
+}
+
+/*
+.paginate_button {
+    background-color: #f3f3f3;
+    display: inline-block;
+    color: #8e9499;
+    vertical-align: top;
+    border-radius: 50%;
+    margin: 0 1px 0 2px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 2.5rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    text-align: center;
+    transition: background-color .3s, color .3s
+}
+
+.dt-buttons,
+.flatpickr-calendar:after,
+.flatpickr-calendar:before {
+    display: none
+}
+
+@media screen and (prefers-reduced-motion:reduce) {
+    .paginate_button {
+        transition: none
+    }
+}
+
+.paginate_button.current {
+    background-color: #03A9F4;
+    color: #FFF;
+    cursor: default
+}
+
+.paginate_button:not(.current):not(.disabled):focus,
+.paginate_button:not(.current):not(.disabled):hover {
+    background-color: #e6e6e6;
+    color: #5c6165
+}
+
+.paginate_button.current,
+.paginate_button.disabled {
+    cursor: default
+}
+
+.paginate_button.next,
+.paginate_button.previous {
+    font-size: 0;
+    position: relative
+}
+
+@media screen and (-ms-high-contrast:active),
+(-ms-high-contrast:none) {
+    .paginate_button.next,
+    .paginate_button.previous {
+        font-size: 1rem
+    }
+}
+
+.paginate_button.next:before,
+.paginate_button.previous:before {
+    font-family: Material-Design-Iconic-Font;
+    font-size: 1rem;
+    line-height: 2.55rem
+}
+
+.paginate_button.previous:before {
+    content: '\F2FF'
+}
+
+.paginate_button.next:before {
+    content: '\F301'
+}
+
+.paginate_button.disabled {
+    opacity: .6
+}
+
+.paginate_button.disabled:focus,
+.paginate_button.disabled:hover {
+    color: #8e9499
+}
+*/
+
+.dataTables_info {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: .9rem;
+    color: #9c9c9c
+}
+
+.dataTables_buttons {
+    float: right;
+    margin: 0 0 0 20px;
+    border-bottom: 1px solid #eceff1;
+    min-height: 35px
+}
+
+.data-table-toggled {
+    overflow: hidden
+}
+
+.data-table-toggled .dataTables_buttons [data-table-action=fullscreen]:before {
+    content: '\f16c'
+}
+
+
+div.dataTables_wrapper div.dataTables_filter input {
+    width: 100%;
+    background-image: linear-gradient(
+        0deg, #e91e63 2px, rgba(156, 39, 176, 0) 0), linear-gradient(
+        0deg, #d2d2d2 1px, rgba(209, 209, 209, 0) 0);
+    border-radius: 0 !important;
+    border-left: 0;
+    /*padding-left: 0;*/
+    background-size: 0 100%, 100% 100%;
+}
+
+div.dataTables_wrapper div.dataTables_filter input:focus {
+    background-size: 100% 100%, 100% 100%;
+}
+
+.actions__item {
+    line-height: 31px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: color .3s;
+    margin: 0 2px;
+    width: 30px;
+    height: 30px
+}
+
+.dt-buttons{
+    display: none
+}
+
+.dataTables_buttons .material-icons{
+    font-size: 30px;
+}
+
+
+a.actions__item {
+    color: #a9adb1;
+}
+
+.pagination>.page-item.active>a,
+.pagination>.page-item.active>a:focus,
+.pagination>.page-item.active>a:hover,
+.pagination>.page-item.active>span,
+.pagination>.page-item.active>span:focus,
+.pagination>.page-item.active>span:hover {
+    background-color: #00bcd4;
+    border-color: #00bcd4;
+    color: #fff;
+    box-shadow: 0 4px 5px 0 rgba(156, 39, 176, 0.14), 0 1px 10px 0 rgba(156, 39, 176, 0.12), 0 2px 4px -1px rgba(156, 39, 176, 0.2);
+}
