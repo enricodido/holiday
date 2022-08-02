@@ -13,33 +13,10 @@
 
                 <div class="card vehicles">
                     <div class="card-header card-header-info card-header-icon">
-                        <div class="card-icon">
-                            <i class="material-icons">directions_car</i>
-                        </div>
-                        <h4 class="card-title">@lang('geolocation.vehicles')</h4>
+                       
                     </div>
                     <div class="card-body position-relative" style="overflow-y: auto;">
-                            <div class="col-md-12">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <button id="poiSearch" class="btn btn-success" style="width: 100%;"><i class="material-icons">search</i>  @lang('form.search') Poi</button>
-                                        <div class="togglebutton">
-                                            <label>
-                                            <input type="checkbox" id="update">
-                                            <span class="toggle"></span>
-                                            Aggiornamento automatico
-                                            </label>
-                                        </div>
-                                        <div class="togglebutton">
-                                            <label>
-                                            <input type="checkbox" id="active">
-                                            <span class="toggle"></span>
-                                            @lang('fleet.vehicles') @lang('geolocation.nolocator')
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div><br>
-                            </div>
+                            
                             <div class="col-md-12">
                                 @foreach ($positions as $position)
                                     <div onclick="zoom({{ $position->vehicle->id }})" class="row border pb-2 pt-2" style="cursor: pointer;">

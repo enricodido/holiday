@@ -1,0 +1,8 @@
+.vehicles {
+    z-index: 99999;
+    position: absolute;
+    width: 400px;
+    right: 20px;
+    bottom: 0px;
+    top: 22px;
+}
